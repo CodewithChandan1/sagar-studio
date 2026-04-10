@@ -118,13 +118,13 @@ export default function Footer() {
             <p className="text-gray-500 text-sm order-3 lg:order-1">
               &copy; {currentYear} Sagar Studio. All rights reserved.
             </p>
-            
+
             <div className="flex items-center gap-3 px-6 py-3 bg-white/5 rounded-full border border-white/10 hover:border-gold/50 transition-all duration-500 group shadow-xl order-1 lg:order-2">
               <span className="text-gray-400 text-[10px] tracking-[0.2em] uppercase font-bold">Crafted By</span>
               <div className="w-px h-4 bg-white/10" />
-              <a 
-                href="https://chandan-me.vercel.app/" 
-                target="_blank" 
+              <a
+                href="https://chandan-me.vercel.app/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-gold font-black text-sm tracking-wider flex items-center gap-2 hover:text-gold-light transition-all duration-300 transform hover:scale-105"
               >

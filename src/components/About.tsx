@@ -59,7 +59,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gold/20 transform group-hover:scale-105 transition-transform duration-500" />
               <img
                 src="https://images.pexels.com/photos/1687678/pexels-photo-1687678.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Sagar Studio"
+                alt="Sagar Studio Creative Photography Team - Lead by DP Tony"
                 className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
             </div>
