@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://thesagarstudio.com/sitemap.xml
+Sitemap: https://sagarstudio.com/sitemap.xml
