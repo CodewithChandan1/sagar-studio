@@ -56,7 +56,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-6 text-gold">Quick Links</h3>
             <ul className="space-y-3">
-              {['Home', 'About', 'Services', 'Gallery', 'Team', 'FAQ', 'Contact'].map((link) => (
+              {['Home', 'About', 'Services', 'Gallery', 'Social', 'Team', 'FAQ', 'Contact'].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
@@ -101,13 +101,19 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
                 <span>Main Road, Kot Ram Dass, Rail Vihar, Jalandhar, Punjab 144001</span>
               </li>
-              <li className="flex items-center gap-3 text-gray-400">
-                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <span>+91 9803200121</span>
+              <li className="flex items-start gap-3 text-gray-400">
+                <Phone className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                <div className="flex flex-col">
+                  <span>+91 9803200121</span>
+                  <span>0181-5017746 (Office)</span>
+                </div>
               </li>
-              <li className="flex items-center gap-3 text-gray-400">
-                <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <span>sagarstudio@mail.com</span>
+              <li className="flex items-start gap-3 text-gray-400">
+                <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
+                <div className="flex flex-col">
+                  <span>sagarstudio@mail.com</span>
+                  <span>info.sagarstudio@gmail.com</span>
+                </div>
               </li>
             </ul>
           </div>

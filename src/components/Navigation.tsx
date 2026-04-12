@@ -1,20 +1,23 @@
 import { useState, useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import { Menu, X, Camera, Phone } from 'lucide-react';
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Gallery', href: '#gallery' },
-  { name: 'Testimonials', href: '#testimonials' },
-  { name: 'Team', href: '#team' },
-  // { name: 'FAQ', href: '#faq' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'Home', href: 'home' },
+  { name: 'About', href: 'about' },
+  { name: 'Services', href: 'services' },
+  { name: 'Gallery', href: 'gallery' },
+  { name: 'Testimonials', href: 'testimonials' },
+  { name: 'Social', href: 'social' },
+  { name: 'FAQ', href: 'faq' },
+  { name: 'Contact', href: 'contact' }
 ];
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,8 +36,15 @@ export default function Navigation() {
     }
   }, [isMobileMenuOpen]);
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (href: string) => {
     setIsMobileMenuOpen(false);
+    
+    // If it's a hash link on the home page, the browser handles it.
+    // If we're on a sub-page, the Link to="/#href" handles it.
+  };
+
+  const getFullHref = (href: string) => {
+    return isHomePage ? `#${href}` : `/#${href}`;
   };
 
   return (
@@ -47,21 +57,22 @@ export default function Navigation() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="flex items-center gap-2 text-2xl font-bold text-white group"
             >
               <Camera className="w-8 h-8 text-gold group-hover:rotate-12 transition-transform duration-300" />
               <span>
                 Sagar <span className="text-gold">Studio</span>
               </span>
-            </a>
+            </Link>
 
             <div className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
-                  href={link.href}
+                  href={getFullHref(link.href)}
+                  onClick={() => handleLinkClick(link.href)}
                   className="text-white hover:text-gold transition-colors duration-300 font-medium relative group"
                 >
                   {link.name}
@@ -110,8 +121,8 @@ export default function Navigation() {
           {navLinks.map((link, index) => (
             <a
               key={link.name}
-              href={link.href}
-              onClick={handleLinkClick}
+              href={getFullHref(link.href)}
+              onClick={() => handleLinkClick(link.href)}
               className={`text-3xl font-bold text-white hover:text-gold transition-all duration-300 ${isMobileMenuOpen
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-10'
