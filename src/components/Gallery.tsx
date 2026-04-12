@@ -128,6 +128,10 @@ export default function Gallery() {
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/5  blur-[120px] -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-gold/5  blur-[120px] translate-y-1/2 -translate-x-1/2" />
 
+        <div className="absolute top-20 left-0 w-full text-center opacity-[0.02] select-none pointer-events-none flex justify-center">
+          <h2 className="text-[12vw] xl:text-[15rem] font-bold leading-none whitespace-nowrap">PORTFOLIO</h2>
+        </div>
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div
             className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'

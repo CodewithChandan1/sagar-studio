@@ -37,6 +37,10 @@ export default function FAQ() {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gold/5 blur-[120px] -z-0" />
       <div className="absolute bottom-0 left-0 w-1/4 h-full bg-gold/5 blur-[100px] -z-0" />
 
+      <div className="absolute top-20 left-0 w-full text-center opacity-[0.02] select-none pointer-events-none flex justify-center">
+        <h2 className="text-[15vw] xl:text-[20rem] font-bold leading-none whitespace-nowrap">FAQ</h2>
+      </div>
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 text-gold mb-4">

@@ -71,8 +71,8 @@ export default function Services() {
       id="services"
       className="py-20 md:py-32 bg-dark relative overflow-hidden"
     >
-      <div className="absolute top-20 -left-20 opacity-[0.02] select-none pointer-events-none">
-        <h2 className="text-[20rem] font-bold leading-none">SERVICES</h2>
+      <div className="absolute top-20 left-0 w-full text-center opacity-[0.02] select-none pointer-events-none flex justify-center">
+        <h2 className="text-[15vw] xl:text-[18rem] font-bold leading-none whitespace-nowrap">SERVICES</h2>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

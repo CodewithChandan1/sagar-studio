@@ -37,6 +37,10 @@ export default function About() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gold rounded-full blur-3xl" />
       </div>
 
+      <div className="absolute top-20 left-0 w-full text-center opacity-[0.02] select-none pointer-events-none flex justify-center">
+        <h2 className="text-[15vw] xl:text-[20rem] font-bold leading-none whitespace-nowrap">ABOUT</h2>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
           className={`text-center mb-16 transition-all duration-1000 ${
