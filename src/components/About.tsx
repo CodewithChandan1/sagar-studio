@@ -43,9 +43,8 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
             About <span className="text-gold">Sagar Studio</span>
@@ -55,14 +54,13 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div
-            className={`transition-all duration-1000 delay-200 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
-            }`}
+            className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+              }`}
           >
             <div className="relative group">
               <div className="absolute inset-0 bg-gold/20 transform group-hover:scale-105 transition-transform duration-500" />
               <img
-                src="https://images.pexels.com/photos/1687678/pexels-photo-1687678.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/assets/images/profile.jpeg"
                 alt="Sagar Studio Creative Photography Team - Lead by DP Tony"
                 className="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
               />
@@ -70,9 +68,8 @@ export default function About() {
           </div>
 
           <div
-            className={`space-y-6 transition-all duration-1000 delay-400 ${
-              isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-            }`}
+            className={`space-y-6 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+              }`}
           >
             <p className="text-lg text-gray-300 leading-relaxed">
               Since <span className="text-gold font-semibold">1996</span>, Sagar Studio has been redefining wedding photography with passion, precision, and artistic excellence. Officially established in <span className="text-gold font-semibold">1998</span>, the studio has grown into a trusted name in professional photography and cinematic filmmaking under the creative leadership of <span className="text-gold font-semibold">DP Tony</span>.
@@ -89,9 +86,8 @@ export default function About() {
         </div>
 
         <div
-          className={`grid md:grid-cols-3 gap-8 transition-all duration-1000 delay-600 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
+          className={`grid md:grid-cols-3 gap-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+            }`}
         >
           {[
             { icon: Award, title: '28+ Years', subtitle: 'Excellence in Photography' },

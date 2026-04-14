@@ -22,9 +22,9 @@ const socialPosts = [
     span: 'md:col-span-4 md:row-span-2'
   },
   {
-    platform: 'youtube',
+    platform: 'instagram',
     type: 'embed',
-    embedId: 'ByAvfkJS-Vk',
+    postId: 'C_kGK3cSsfM',
     title: 'Wedding Highlights',
     span: 'md:col-span-4 md:row-span-2'
   },
@@ -197,21 +197,21 @@ export default function SocialFeed() {
               return (
                 <div
                   key={index}
-                  className={`bg-white  overflow-hidden border border-white/5 transition-all duration-1000 ${post.span} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
+                  className={`bg-white overflow-hidden border border-white/5 transition-all duration-1000 ${post.span} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'}`}
                   style={{ transitionDelay: `${index * 150}ms` }}
                 >
                   {post.platform === 'youtube' ? (
-                    <div className="w-full h-full aspect-video min-h-[300px]">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${post.embedId}?si=3Xfec2683QD1FA02`}
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                        className="grayscale hover:grayscale-0 transition-all duration-700"
-                      />
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-white">
+                      <div className="w-full aspect-video relative">
+                        <iframe
+                          className="absolute top-0 left-0 w-full h-full grayscale hover:grayscale-0 transition-all duration-700"
+                          src={`https://www.youtube.com/embed/${post.embedId}?si=3Xfec2683QD1FA02`}
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                        />
+                      </div>
                     </div>
                   ) : (
                     <div className="w-full h-full overflow-y-auto custom-scrollbar bg-white/5 p-2">
