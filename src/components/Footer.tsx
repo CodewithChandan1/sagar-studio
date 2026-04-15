@@ -112,7 +112,7 @@ export default function Footer() {
                 <Mail className="w-5 h-5 text-gold flex-shrink-0 mt-1" />
                 <div className="flex flex-col">
                   <span>sagarstudio@mail.com</span>
-                  <span>info.sagarstudio@gmail.com</span>
+                  <span>info@sagarphotography.com</span>
                 </div>
               </li>
             </ul>
